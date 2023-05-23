@@ -177,10 +177,16 @@ img {
   margin-bottom: 30px;
 }
 .random-btn {
+  display: flex;
   padding: 5px;
   background-color: var(--clr-primary-9);
   border-radius: 5px;
   font-family: var(--ff-primary);
   font-size: 14px;
   border: 2px solid var(--clr-primary-3);
+  cursor: pointer;
+}
+.random-btn:hover {
+  color: white;
+  background-color: var(--clr-primary-4);
 }

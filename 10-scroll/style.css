@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+nav {
+  padding: 20px;
+  z-index: 12;
+}
+/* img {
+  position: fixed;
+  background-size: cover;
+  object-fit: cover;
+  z-index: -1;
+} */
+.nav-center {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: transparent;
+  z-index: 12;
+  position: fixed;
+}
+.nav-header {
+  display: flex;
+  justify-content: center;
+  padding-left: 100px;
+  align-items: center;
+  background-color: transparent;
+}
+.nav-center img {
+  width: 65px;
+}
+.link-container {
+  display: flex;
+  justify-content: center;
+}
+.link-container ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  list-style: none;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  position: fixed;
+}
+.nav-toggle {
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+}
+
+main {
+  background-image: url(./hero-bcg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+ul li:hover {
+  cursor: pointer;
+
+  font-size: 1.4rem;
+  transition: 200ms;
+}
+li {
+  text-shadow: 0 0 5px black;
+}
+
+.content-center {
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.text-center {
+  height: 160px;
+  width: 800px;
+}
+.text-center h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  color: white;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+}
+.text-center p {
+  margin-top: 20px;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Roboto';
+  text-align: center;
+}
+.btn {
+  font-size: 1rem;
+  border: 2px solid white;
+  background: none;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+  transition: 300ms;
+  cursor: pointer;
+}
+.about-section,
+.services-section,
+.tour-section {
+  width: 100%;
+  height: 800px;
+  background-color: #f1f5f8;
+  color: white;
+  text-transform: uppercase;
+}
+.services-section {
+  background-color: #ffffff;
+}
+.tour-section {
+  background-color: #f1f5f8;
+}
+.about-section,
+.services-section,
+.tour-section p {
+  font-size: 3rem;
+  color: #102a42;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+span {
+  color: lightskyblue;
+  margin-left: 20px;
+}
+footer {
+  background-color: #102a42;
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+}
+.footer p {
+  color: white;
+  letter-spacing: 0.3rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
